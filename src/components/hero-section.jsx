@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
@@ -24,8 +23,8 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative isolate overflow-hidden">
       <div aria-hidden className="absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-[-20%] h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute right-[-10%] top-[30%] h-[400px] w-[400px] rounded-full bg-indigo-500/10 blur-3xl" />
+        <div className="absolute left-1/2 top-[-20%] h-125 w-200 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute right-[-10%] top-[30%] h-100 w-100 rounded-full bg-indigo-500/10 blur-3xl" />
       </div>
 
       <div className="mx-auto max-w-6xl px-6 pt-32 pb-28 text-center">
@@ -80,10 +79,10 @@ export default function HeroSection() {
             className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row"
           >
             <Button asChild size="lg" className="rounded-xl px-7">
-              <Link to="/projects">
+              <a href="#projects">
                 View Projects
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+              </a>
             </Button>
 
             <Button
